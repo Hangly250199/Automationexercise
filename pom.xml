@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>hangly</groupId>
+    <artifactId>Automationpractice</artifactId>
+    <version>1.0-SNAPSHOT</version>
+<dependencies>
+    <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.45.0</version>
+        <scope>compile</scope>
+    </dependency>
+    <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.12.0</version>
+    </dependency>
+    <!-- Source: https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>2.0.18</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- Source: https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-maven</artifactId>
+        <version>2.8</version>
+        <scope>compile</scope>
+    </dependency>
+    <!-- Source: https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-testng</artifactId>
+        <version>2.35.3</version>
+        <scope>compile</scope>
+    </dependency>
+</dependencies>
+    <properties>
+        <aspectj.version>1.9.19</aspectj.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-maven</artifactId>
+            <version>2.12.0</version>
+            <configuration>
+                <reportVersion>2.21.0</reportVersion>
+                <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
+            </configuration>
+            <executions>
+            <execution>
+                <id>allure-report</id>
+                <phase>post-integration-test</phase> <!-- Chạy ngay sau khi kết thúc test -->
+                <goals>
+                    <goal>report</goal>
+                </goals>
+            </execution>
+            </executions>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.1.2</version>
+            <configuration>
+                <argLine>
+                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                </argLine>
+            </configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjweaver</artifactId>
+                    <version>${aspectj.version}</version>
+                </dependency>
+            </dependencies>
+        </plugin>
+    </plugins>
+</build>
+</project>

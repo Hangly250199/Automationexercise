@@ -1,0 +1,44 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="groups">
+        <value>
+          <list size="31">
+            <item index="0" class="java.lang.String" itemvalue="VerifySubscription" />
+            <item index="1" class="java.lang.String" itemvalue="VerifySubscriptionHP" />
+            <item index="2" class="java.lang.String" itemvalue="VerifySubscriptionCartPage" />
+            <item index="3" class="java.lang.String" itemvalue="TC12" />
+            <item index="4" class="java.lang.String" itemvalue="TC09" />
+            <item index="5" class="java.lang.String" itemvalue="TC08" />
+            <item index="6" class="java.lang.String" itemvalue="TC01" />
+            <item index="7" class="java.lang.String" itemvalue="TC02" />
+            <item index="8" class="java.lang.String" itemvalue="TC03" />
+            <item index="9" class="java.lang.String" itemvalue="TC04" />
+            <item index="10" class="java.lang.String" itemvalue="TC11" />
+            <item index="11" class="java.lang.String" itemvalue="TC10" />
+            <item index="12" class="java.lang.String" itemvalue="TC07" />
+            <item index="13" class="java.lang.String" itemvalue="TC14" />
+            <item index="14" class="java.lang.String" itemvalue="TC13" />
+            <item index="15" class="java.lang.String" itemvalue="TC06" />
+            <item index="16" class="java.lang.String" itemvalue="TC15" />
+            <item index="17" class="java.lang.String" itemvalue="TC05" />
+            <item index="18" class="java.lang.String" itemvalue="TC16" />
+            <item index="19" class="java.lang.String" itemvalue="TC17" />
+            <item index="20" class="java.lang.String" itemvalue="TC18" />
+            <item index="21" class="java.lang.String" itemvalue="TC18_01" />
+            <item index="22" class="java.lang.String" itemvalue="TC19" />
+            <item index="23" class="java.lang.String" itemvalue="TC20" />
+            <item index="24" class="java.lang.String" itemvalue="TC21" />
+            <item index="25" class="java.lang.String" itemvalue="TC22" />
+            <item index="26" class="java.lang.String" itemvalue="TC23" />
+            <item index="27" class="java.lang.String" itemvalue="TC24" />
+            <item index="28" class="java.lang.String" itemvalue="regression" />
+            <item index="29" class="java.lang.String" itemvalue="TC25" />
+            <item index="30" class="java.lang.String" itemvalue="TC26" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
