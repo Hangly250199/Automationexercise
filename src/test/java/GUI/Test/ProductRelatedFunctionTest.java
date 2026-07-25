@@ -58,7 +58,7 @@ public class ProductRelatedFunctionTest extends LogInSignInStep {
         homePage.selectCategory(1);
         homePage.clickSubCate(1, 0);
     }
-    @Test(groups = "TC18")
+    @Test(groups = {"TC18", "regression"})
     @Description("View Category Products")
     public void viewCategoryProd() {
         verifyWebsiteStep();

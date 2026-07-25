@@ -222,7 +222,7 @@ public class CheckOutFunctionTest extends CheckOutSteps {
         homePage = new HomePage(driver);
         footerPage = homePage.scrollEndPage();
         footerPage.verifySubscription();
-        Thread.sleep(5000);
+        Thread.sleep(4000);
         homePage.scrollUpStartPage();
         homePage.verifyScrollUpSuccess();
     }
